@@ -228,14 +228,14 @@ const App = () => {
   return (
     <div className="min-h-screen bg-[#11172A] text-[#DFE5EC]">
       <header className="sticky top-0 z-50 border-b border-[#2A3555]/80 bg-[#0D1425]/90 backdrop-blur-xl">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-6 lg:px-8">
           <a href="#home" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-teal-400/40 bg-teal-400/10 text-sm font-semibold text-teal-300">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-teal-400/40 bg-teal-400/10 text-sm font-semibold text-teal-300 sm:h-10 sm:w-10">
               SK
             </div>
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-teal-300">Suraj</p>
-              <p className="text-xs text-slate-500">Developer Portfolio</p>
+              <p className="text-[11px] text-slate-500">Developer Portfolio</p>
             </div>
           </a>
           <div className="hidden flex-1 items-center justify-end gap-2 pr-4 text-sm md:flex">
@@ -252,45 +252,45 @@ const App = () => {
               </a>
             ))}
           </div>
-          <a href="#contact" className="hidden rounded-full border border-teal-400/30 bg-teal-400/10 px-4 py-2 text-sm font-medium text-teal-300 transition hover:bg-teal-400/20 md:inline-flex">
+          <a href="#contact" className="hidden rounded-full border border-teal-400/30 bg-teal-400/10 px-3 py-2 text-sm font-medium text-teal-300 transition hover:bg-teal-400/20 md:inline-flex">
             Let&apos;s Talk
           </a>
         </nav>
       </header>
 
       <main id="home">
-        <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-          <div className="relative overflow-hidden rounded-[2rem] border border-[#2A3555] bg-gradient-to-br from-[#16203A] via-[#11172A] to-[#0D1425] p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_30px_80px_rgba(0,0,0,0.35)] sm:p-8 lg:p-10">
+        <section className="mx-auto max-w-7xl px-3 py-12 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+          <div className="relative overflow-hidden rounded-[1.5rem] border border-[#2A3555] bg-gradient-to-br from-[#16203A] via-[#11172A] to-[#0D1425] p-4 shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_30px_80px_rgba(0,0,0,0.35)] sm:rounded-[2rem] sm:p-8 lg:p-10">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(45,212,191,0.16),_transparent_40%)]" />
             <div className="relative grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="space-y-7 lg:items-start lg:text-left"
+                className="space-y-5 sm:space-y-7 lg:items-start lg:text-left"
               >
-                <div className="inline-flex items-center gap-2 rounded-full border border-teal-400/30 bg-teal-400/10 px-4 py-2 text-sm font-medium text-teal-300">
+                <div className="inline-flex items-center gap-2 rounded-full border border-teal-400/30 bg-teal-400/10 px-3 py-1.5 text-sm font-medium text-teal-300 sm:px-4 sm:py-2">
                   <span className="h-2.5 w-2.5 rounded-full bg-teal-400" />
                   Open for opportunities
                 </div>
-                <div className="space-y-4 max-w-2xl">
-                  <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-7xl">
+                <div className="space-y-3 max-w-2xl sm:space-y-4">
+                  <h1 className="text-3xl font-semibold leading-tight sm:text-5xl lg:text-7xl">
                     Hi, I&apos;m <span className="text-teal-300">{portfolioData.name}</span>
                   </h1>
-                  <p className="text-lg font-medium text-slate-200 sm:text-xl">{portfolioData.title}</p>
-                  <p className="text-base leading-8 text-slate-400 sm:text-lg">{portfolioData.intro}</p>
-                  <p className="text-base font-medium text-slate-300 sm:text-lg">
+                  <p className="text-base font-medium text-slate-200 sm:text-xl">{portfolioData.title}</p>
+                  <p className="text-sm leading-7 text-slate-400 sm:text-lg sm:leading-8">{portfolioData.intro}</p>
+                  <p className="text-sm font-medium text-slate-300 sm:text-lg">
                     I specialize in <AnimatedText />
                   </p>
                 </div>
-                <div className="flex flex-wrap justify-start gap-3">
-                  <a href="https://drive.google.com/file/d/1GVs9d5qHVVFwADMjlVY7fYdoESWotBOo/view?usp=drive_link" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-teal-500 px-5 py-3 font-medium text-slate-950 transition hover:bg-teal-400">
+                <div className="flex flex-wrap justify-start gap-2 sm:gap-3">
+                  <a href="https://drive.google.com/file/d/1GVs9d5qHVVFwADMjlVY7fYdoESWotBOo/view?usp=drive_link" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-teal-500 px-4 py-2.5 text-sm font-medium text-slate-950 transition hover:bg-teal-400 sm:px-5 sm:py-3">
                     <FaDownload /> Download Resume
                   </a>
-                  <a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-[#2A3555] bg-[#1A2238]/80 px-5 py-3 font-medium transition hover:border-teal-400 hover:text-teal-300">
+                  <a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-[#2A3555] bg-[#1A2238]/80 px-4 py-2.5 text-sm font-medium transition hover:border-teal-400 hover:text-teal-300 sm:px-5 sm:py-3">
                     <FaPaperPlane /> Contact Me
                   </a>
-                  <a href="#projects" className="inline-flex items-center gap-2 rounded-full border border-[#2A3555] bg-[#1A2238]/80 px-5 py-3 font-medium transition hover:border-teal-400 hover:text-teal-300">
+                  <a href="#projects" className="inline-flex items-center gap-2 rounded-full border border-[#2A3555] bg-[#1A2238]/80 px-4 py-2.5 text-sm font-medium transition hover:border-teal-400 hover:text-teal-300 sm:px-5 sm:py-3">
                     <FaProjectDiagram /> View Projects
                   </a>
                 </div>
