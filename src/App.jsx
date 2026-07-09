@@ -256,6 +256,20 @@ const App = () => {
             Let&apos;s Talk
           </a>
         </nav>
+        <div className="border-t border-[#2A3555]/60 bg-[#0D1425]/95 px-3 py-2 md:hidden">
+          <div className="flex flex-wrap gap-2">
+            {[
+              { label: 'About', href: '#about' },
+              { label: 'Skills', href: '#skills' },
+              { label: 'Projects', href: '#projects' },
+              { label: 'Contact', href: '#contact' },
+            ].map((link) => (
+              <a key={link.label} href={link.href} className="rounded-full border border-[#2A3555] bg-[#11172A]/80 px-3 py-1.5 text-sm text-slate-300">
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
       </header>
 
       <main id="home">
@@ -283,14 +297,14 @@ const App = () => {
                     I specialize in <AnimatedText />
                   </p>
                 </div>
-                <div className="flex flex-wrap justify-start gap-2 sm:gap-3">
-                  <a href="https://drive.google.com/file/d/1GVs9d5qHVVFwADMjlVY7fYdoESWotBOo/view?usp=drive_link" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-teal-500 px-4 py-2.5 text-sm font-medium text-slate-950 transition hover:bg-teal-400 sm:px-5 sm:py-3">
+                <div className="flex flex-col items-start gap-2 sm:flex-row sm:flex-wrap sm:gap-3">
+                  <a href="https://drive.google.com/file/d/1GVs9d5qHVVFwADMjlVY7fYdoESWotBOo/view?usp=drive_link" target="_blank" rel="noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-500 px-4 py-2.5 text-sm font-medium text-slate-950 transition hover:bg-teal-400 sm:w-auto sm:justify-start sm:px-5 sm:py-3">
                     <FaDownload /> Download Resume
                   </a>
-                  <a href="#contact" className="inline-flex items-center gap-2 rounded-full border border-[#2A3555] bg-[#1A2238]/80 px-4 py-2.5 text-sm font-medium transition hover:border-teal-400 hover:text-teal-300 sm:px-5 sm:py-3">
+                  <a href="#contact" className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#2A3555] bg-[#1A2238]/80 px-4 py-2.5 text-sm font-medium transition hover:border-teal-400 hover:text-teal-300 sm:w-auto sm:justify-start sm:px-5 sm:py-3">
                     <FaPaperPlane /> Contact Me
                   </a>
-                  <a href="#projects" className="inline-flex items-center gap-2 rounded-full border border-[#2A3555] bg-[#1A2238]/80 px-4 py-2.5 text-sm font-medium transition hover:border-teal-400 hover:text-teal-300 sm:px-5 sm:py-3">
+                  <a href="#projects" className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#2A3555] bg-[#1A2238]/80 px-4 py-2.5 text-sm font-medium transition hover:border-teal-400 hover:text-teal-300 sm:w-auto sm:justify-start sm:px-5 sm:py-3">
                     <FaProjectDiagram /> View Projects
                   </a>
                 </div>
